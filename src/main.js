@@ -14,6 +14,7 @@ button.onclick = () => {
 
   titleElement.textContent = meme.name;
   imgElement.src = meme.img;
+  imgElement.classList.add('meme-image');
 
   // remove all children
   memeContainer.innerHTML = "";

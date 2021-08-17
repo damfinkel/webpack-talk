@@ -21,7 +21,7 @@ module.exports = {
         }
       },
       {
-        test: /\.webp/,
+        test: /\.webp|.gif/,
         type: 'asset/resource'
       },
       {
@@ -37,5 +37,7 @@ module.exports = {
       }
     ]
   },
-  plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })]
+  plugins: [
+    new HtmlWebpackPlugin({ template: './src/index.html' })
+  ]
 }
